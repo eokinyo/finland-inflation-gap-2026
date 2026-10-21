@@ -12,6 +12,14 @@ The script saves the raw API responses and tidy CSV files in `data/` and the cha
 with an error if the September 2026 values differ from the releases (Finland HICP 2.7, euro area HICP 3.8,
 Finland CPI 2.5).
 
+## Checking the data
+
+    .venv/bin/python check_data.py --offline   # check the saved files in data/
+    .venv/bin/python check_data.py             # re-fetch from Eurostat and Statistics Finland and compare
+
+`check_data.py` verifies the charted September 2026 values (Finland HICP 2.7, euro area HICP 3.8, Finland CPI
+2.5, Finland second lowest of the 21 euro area members after Malta at 2.4). It exits non-zero on any mismatch.
+
 ## Outputs
 
 1. `output/chart1_finland_vs_euro_area.png`: Finland and euro area harmonised inflation, Jan 2024 to Sept 2026.
