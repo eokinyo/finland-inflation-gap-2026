@@ -1,5 +1,7 @@
 # Finland's inflation gap, September 2026
 
+**Status:** published, 29 October 2026. Live article: https://ellyokinyo.com/writing/finland-inflation-cushion-2026.html
+
 Charts for the article "Finland's inflation cushion: 2.7% against the euro area's 3.8% in September".
 Every number is downloaded by `make_charts.py` from the official APIs. No figure is typed by hand.
 
